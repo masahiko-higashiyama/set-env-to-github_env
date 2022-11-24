@@ -23,7 +23,7 @@ export const run = async (
     _input = cli.input,
     _flags = cli.flags
 ): Promise<{ exitStatus: number; stdout: string | null; stderr: Error | null }> => {
-    const workflows = glob.sync("./.github/workflows/*.{yaml,yml}");
+    const workflows = glob.sync("./.github/**/*.{yaml,yml}");
     for (const workflowFilePath of workflows) {
         const content = await fs.readFile(workflowFilePath, "utf-8");
         const newContent = convert(content);
