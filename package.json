@@ -42,7 +42,7 @@
     "test": "mocha \"test/**/*.ts\"",
     "watch": "tsc -p . --watch",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\"",
-    "prepare": "git config --local core.hooksPath .githooks"
+    "prepare": ""
   },
   "engines": {
     "node": ">=14"
